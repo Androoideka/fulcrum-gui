@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+
+    <!-- CSS for universal page contents -->
+    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <!-- Search related CSS -->
+    <link rel="stylesheet" type="text/css" href="search.css" />
+    <!-- Page specific CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <title>Fulcrum</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row no-gutters pt-3">
+            <div class="col-6 pb-3 logo">
+                <a href="main.html" class="vague-link flashy-link logo-text">
+                    <span class="fas fa-flask align-middle logo"></span>
+                    <p class="d-inline">Fulcrum</p>
+                </a>
+            </div>
+            <div class="col-6 text-right">
+                <a href="login.html" class="vague-link flashy-link">
+                    <span class="fas fa-user-circle align-middle user"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row d-none d-md-block">
+            <div class="col-md-12">
+                <h1 class="title">
+                    Fulcrum
+                </h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 px-4">
+                <h2 class="title description">
+                    Find any scientific article and metadata in our database:
+                </h2>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="input-group">
+                    <input class="form-control rounded-pill border-right-0" type="search" placeholder="Search.." />
+                    <span class="input-group-append">
+                        <span class="input-group-text bg-transparent border-0 ml-n5">
+                            <a href="search_article.html" class="vague-link fas fa-search search-icon"></a>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-4 col-md-2 offset-md-3 text-center">
+                <input type="radio" id="article" name="search-type" value="Article" checked="checked" />
+                <label for="article">
+                    Article
+                </label>
+            </div>
+            <div class="col-4 col-md-2 text-center">
+                <input type="radio" id="researcher" name="search-type" value="Researcher" />
+                <label for="researcher">
+                    Researcher
+                </label>
+            </div>
+            <div class="col-4 col-md-2 text-center">
+                <input type="radio" id="institute" name="search-type" value="Institute" />
+                <label for="institute">
+                    Institute
+                </label>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="title description">
+                    Or pick your institute from the list:
+                </h2>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-4 col-md-3 offset-3 offset-md-1 p-2">
+                <a href="imgge.html" class="vague-link">
+                    <img src="resources/imgge.png" alt="Institut za molekularnu genetiku i genetičko inženjerstvo" />
+                    IMGGE
+                </a>
+            </div>
+            <div class="col-4 col-md-3 p-2">
+                <a href="raf.html" class="vague-link">
+                    <img src="resources/raf.png" alt="Računarski fakultet" />
+                    RAF
+                </a>
+            </div>
+            <div class="col-4 col-md-3 offset-3 offset-md-0 p-2">
+                <a href="etf.html" class="vague-link">
+                    <img src="resources/etf.png" alt="Elektrotehnički fakultet" />
+                    ETF
+                </a>
+            </div>
+            <div class="col-4 col-md-2 p-2">
+                <a href="fon.html" class="vague-link">
+                    <img src="resources/fon.png" alt="Fakultet organizacionih nauka" />
+                    FON
+                </a>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-4 col-md-3 offset-3 offset-md-1 p-2">
+                <a href="ucla.html" class="vague-link">
+                    <img src="resources/ucla.png" alt="University of California, Los Angeles" />
+                    UCLA
+                </a>
+            </div>
+            <div class="col-4 col-md-3 p-2">
+                <a href="stanford.html" class="vague-link">
+                    <img src="resources/stanford.png" alt="Stanford University" />
+                    Stanford
+                </a>
+            </div>
+            <div class="col-4 col-md-3 offset-3 offset-md-0 p-2">
+                <a href="mit.html" class="vague-link">
+                    <img src="resources/mit.png" alt="Massachusetts Institute of Technology" />
+                    MIT
+                </a>
+            </div>
+            <div class="col-4 col-md-2 p-2">
+                <a href="caltech.html" class="vague-link">
+                    <img src="resources/caltech.png" alt="California Institute of Technology" />
+                    Caltech
+                </a>
+            </div>
+        </div>
+        <footer class="mt-auto pt-2 text-muted d-none d-md-block">
+            <div class="bottom-footer p-3">
+                <a href="new_article.html">
+                    Add new article
+                </a>
+                <a href="apply.html" class="float-right">
+                    Want to apply your institute for the program?
+                </a>
+                <a href="#" class="px-4 float-right">
+                    Help
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

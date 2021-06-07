@@ -1,0 +1,36 @@
+.paper {
+    overflow-y: auto;
+    font-size: 0.25em;
+}
+
+/* SM */
+/* Small devices - sm (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    .paper {
+        font-size: 0.4em;
+    }
+}
+
+/* MD */
+/* Medium devices - md (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    .paper {
+        font-size: 0.65em;
+    }
+}
+
+/* LG */
+/* Large devices - lg (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .paper {
+        font-size: 0.95em;
+    }
+}
+
+.paper-row {
+    height: 26%;
+}
+
+.connection-row {
+    height: 5%;
+}

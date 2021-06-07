@@ -1,0 +1,21 @@
+.dp {
+    font-size: 8em;
+}
+
+.overflowing-flex {
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .privacy-selector {
+        width: 100%;
+    }
+    .recovery-header {
+        background-color: rgb(170, 167, 167);
+        border: thin solid black;
+    }
+}

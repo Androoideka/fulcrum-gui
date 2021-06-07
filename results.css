@@ -1,0 +1,17 @@
+.no-profile {
+    color: green;
+}
+
+.mini-dp {
+    font-size: 2em;
+    padding-left: 2%;
+}
+
+.profile-name {
+    vertical-align: middle;
+}
+
+.institution-cover {
+    width: 80%;
+    object-fit: contain;
+}

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+
+    <!-- CSS for universal page contents -->
+    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <!-- Side menu related CSS -->
+    <link rel="stylesheet" type="text/css" href="side_menu.css" />
+
+    <title>Fulcrum</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row no-gutters pt-3">
+            <div class="col-6 pb-3 logo">
+                <a href="main.html" class="vague-link flashy-link logo-text">
+                    <span class="fas fa-flask align-middle logo"></span>
+                    <p class="d-inline">Fulcrum</p>
+                </a>
+            </div>
+            <div class="col-6 text-right">
+                <div class="dropdown d-none d-md-block">
+                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                        <p class="d-inline">Andrej V. Gašić</p>
+                        <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                    </a>
+                    <div class="dropdown-menu mt-3">
+                        <a href="account.html" class="dropdown-item">
+                            <span class="fas fa-user-alt"></span>
+                            Profile
+                        </a>
+                        <a href="raf.html" class="dropdown-item">
+                            <span class="fas fa-university"></span>
+                            RAF
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <span class="fas fa-comment-dots"></span>
+                            Send feedback
+                        </a>
+                        <a href="search_settings.html" class="dropdown-item">
+                            <span class="fas fa-cog"></span>
+                            Settings
+                        </a>
+                        <a href="main.html" class="dropdown-item">
+                            <span class="	fas fa-sign-out-alt"></span>
+                            Sign out
+                        </a>
+                    </div>
+                </div>
+                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                    <p class="d-inline">Andrej V. Gašić</p>
+                    <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 d-none d-md-block">
+                <ul class="d-none d-md-block nav flex-column navigation-font">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="search_settings.html">Search settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article_settings.html">Article settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="language_settings.html">Language settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-10">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Citation format</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="ama" id="ama" value="ama">
+                            <label class="form-check-label" for="ama">
+                                Show me citations in AMA style
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="acs" id="acs" value="acs"
+                                checked="checked">
+                            <label class="form-check-label" for="acs">
+                                Show me citations in ACS style
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="chicago" id="chicago" value="chicago">
+                            <label class="form-check-label" for="chicago">
+                                Show me citations in Chicago style
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="ieee" id="ieee" value="ieee">
+                            <label class="form-check-label" for="ieee">
+                                Show me citations in IEEE style
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="apsa" id="apsa" value="apsa">
+                            <label class="form-check-label" for="apsa">
+                                Show me citations in APSA style
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mla" id="mla" value="mla">
+                            <label class="form-check-label" for="mla">
+                                Show me citations in MLA style
+                            </label>
+                        </div>
+                        <h2 class="mt-4">Category</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="impact" id="impact">
+                            <label class="form-check-label" for="impact">
+                                Show impact factor of the journal
+                                at the time of publishing
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="ranking" id="ranking">
+                            <label class="form-check-label" for="ranking">
+                                Show ranking of the journal
+                                at the time of publishing specified by
+                                Journal Citation Reports
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="category" id="category">
+                            <label class="form-check-label" for="category">
+                                Show category specified by the
+                                Ministry of Education, Science and
+                                Technological Development of the
+                                Republic of Serbia
+                            </label>
+                        </div>
+                        <h2 class="mt-4">Site features</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="overview-link" id="overview-link">
+                            <label class="form-check-label" for="overview-link">
+                                When clicking on an article link,
+                                lead me to the overview on Fulcrum
+                                instead of the actual content of the article
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="overview" id="overview">
+                            <label class="form-check-label" for="overview">
+                                Show the overview button instead of
+                                the read button on search results
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-auto pt-2 text-muted d-none d-md-block">
+            <div class="bottom-footer p-3">
+                <a href="new_article.html">
+                    Add new article
+                </a>
+                <a href="apply.html" class="float-right">
+                    Want to apply your institute for the program?
+                </a>
+                <a href="#" class="px-4 float-right">
+                    Help
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

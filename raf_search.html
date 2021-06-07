@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+
+    <!-- CSS for universal page contents -->
+    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <!-- Institution specific CSS -->
+    <link rel="stylesheet" type="text/css" href="institution.css" />
+    <!-- Search related CSS -->
+    <link rel="stylesheet" type="text/css" href="search.css" />
+    <!-- Filter related CSS -->
+    <link rel="stylesheet" type="text/css" href="filters.css" />
+    <!-- Result related CSS -->
+    <link rel="stylesheet" type="text/css" href="results.css" />
+    <!-- Bottom nav specific CSS -->
+    <link rel="stylesheet" type="text/css" href="bottom_nav.css" />
+
+    <title>Fulcrum</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row no-gutters pt-3">
+            <div class="col-6 pb-3 logo">
+                <a href="main.html" class="vague-link flashy-link logo-text">
+                    <span class="fas fa-flask align-middle logo"></span>
+                    <p class="d-inline">Fulcrum</p>
+                </a>
+            </div>
+            <div class="col-6 text-right">
+                <div class="dropdown d-none d-md-block">
+                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                        <p class="d-inline">Andrej V. Gašić</p>
+                        <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                    </a>
+                    <div class="dropdown-menu mt-3">
+                        <a href="account.html" class="dropdown-item">
+                            <span class="fas fa-user-alt"></span>
+                            Profile
+                        </a>
+                        <a href="raf.html" class="dropdown-item">
+                            <span class="fas fa-university"></span>
+                            RAF
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <span class="fas fa-comment-dots"></span>
+                            Send feedback
+                        </a>
+                        <a href="search_settings.html" class="dropdown-item">
+                            <span class="fas fa-cog"></span>
+                            Settings
+                        </a>
+                        <a href="main.html" class="dropdown-item">
+                            <span class="	fas fa-sign-out-alt"></span>
+                            Sign out
+                        </a>
+                    </div>
+                </div>
+                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                    <p class="d-inline">Andrej V. Gašić</p>
+                    <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                </a>
+            </div>
+            <div class="col-12 text-center">
+                <h1>
+                    Računarski fakultet
+                </h1>
+            </div>
+            <div class="col-12 d-none d-md-block mb-3">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="raf.html">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="raf_search.html">Bibliography</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 d-lg-none px-3 my-auto">
+                <a href="department_filter.html" class="vague-link">
+                    <span class="fas fa-filter"></span>
+                    Filters
+                </a>
+            </div>
+            <div class="col-6 d-lg-none px-3 text-right">
+                <button class="btn btn-primary">Clear</button>
+            </div>
+            <div class="col-12 px-3 d-lg-none">
+                <hr class="d-lg-none" />
+            </div>
+            <div class="col-6 px-3 d-lg-none my-auto">
+                1350 results.
+            </div>
+            <div class="col-12 px-3 d-lg-none order-4">
+                <hr class="d-lg-none" />
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#date-filter">
+                        Date Range
+                    </div>
+                    <div class="collapse" id="date-filter">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="start-date">From</label>
+                                <input type="date" class="form-control" id="start-date" name="start-date" />
+                            </div>
+                            <div class="form-group">
+                                <label for="end-date">To</label>
+                                <input type="date" class="form-control" id="end-date" name="end-date" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#category-filter">
+                        Categories
+                    </div>
+                    <div class="collapse" id="category-filter">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="m21a" />
+                                <label class="form-check-label" for="m21a">
+                                    M21a (34 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="m21" />
+                                <label class="form-check-label" for="m21">
+                                    M21 (21 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="m22" />
+                                <label class="form-check-label" for="m22">
+                                    M22 (22 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="m23" />
+                                <label class="form-check-label" for="m23">
+                                    M23 (80 articles)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#impact-filter">
+                        Impact Factor Range
+                    </div>
+                    <div class="collapse" id="impact-filter">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="start-date">From</label>
+                                <input type="number" class="form-control" id="lowest-impact" name="lowest-impact"
+                                    step="0.001" min="0" />
+                            </div>
+                            <div class="form-group">
+                                <label for="start-date">To</label>
+                                <input type="number" class="form-control" id="highest-impact" name="highest-impact"
+                                    step="0.001" min="0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#keyword-filter">
+                        Keywords
+                    </div>
+                    <div class="collapse" id="keyword-filter">
+                        <div class="card-body">
+                            <span>computer science</span>
+                            <span><sub>machine learning</sub></span>
+                            <span>frontend</span>
+                            <span>ui design</span>
+                            <span><sup>deep learning</sup></span>
+                            <span>functional programming</span>
+                            <span><sub>haskell</sub></span>
+                            <span>typography</span>
+                            <span>lambda calculus</span>
+                            <span>clustering</span>
+                            <hr />
+                            <div class="form-group">
+                                <label for="custom-keywords">Custom keywords (separated by commas)</label>
+                                <input type="text" class="form-control" id="custom-keywords" name="custom-keywords" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#department-filter">
+                        Departments
+                    </div>
+                    <div class="collapse" id="department-filter">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cs" />
+                                <label class="form-check-label" for="cs">
+                                    Computer Science (20 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="ce" />
+                                <label class="form-check-label" for="ce">
+                                    Computer Engineering (20 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cn" />
+                                <label class="form-check-label" for="cn">
+                                    Computer Networks (20 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cd" />
+                                <label class="form-check-label" for="cd">
+                                    Computer Design (20 articles)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#affiliation-filter">
+                        Affiliation Involvement
+                    </div>
+                    <div class="collapse" id="affiliation-filter">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="indep" />
+                                <label class="form-check-label" for="indep">
+                                    Independent (20 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="collab" />
+                                <label class="form-check-label" for="collab">
+                                    Collaboration (20 articles)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#journal-filter">
+                        Journals
+                    </div>
+                    <div class="collapse" id="journal-filter">
+                        <div class="card-body">
+                            <input type="text" class="form-control" id="search-journals" name="search-journals" />
+                            <ul class="list-group check-list card-filter">
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Nature (20 articles)
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Science (20 articles)
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Journal of Statistical Software (20 articles)
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        IEEE (20 articles)
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 pl-3 order-last order-lg-0">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3 d-flex flex-column">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Software JPEG decoder for embedded systems</h4>
+                            </div>
+                        </div>
+                        <div class="row flex-grow-1">
+                            <div class="col-12 mt-auto">
+                                <span class="float-left">
+                                    <a href="profile.html">Andrej V. Gasic</a>,
+                                    <a href="profile.html">Stevan A. Milinkovic</a>
+                                    <br />
+                                    2012 20th Telecommunications Forum
+                                </span>
+                                <span class="float-right mt-2">
+                                    <button class="btn btn-outline-primary">
+                                        Read
+                                    </button>
+                                    <button class="btn btn-outline-primary ml-1">
+                                        Cite
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3 d-flex flex-column">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Prognostic significance of SOX2, SOX3, SOX11, SOX14 and SOX 18 gene expression in
+                                    adult de novo acute myeloid leukemia</h4>
+                            </div>
+                        </div>
+                        <div class="row flex-grow-1">
+                            <div class="col-12">
+                                <span class="float-left">
+                                    <span class="no-profile">Bojana Dimić Surla</span>
+                                    <br />
+                                    Leukemia research, 2018 - Elsevier
+                                </span>
+                                <span class="float-right mt-2">
+                                    <button class="btn btn-outline-primary">
+                                        Read
+                                    </button>
+                                    <button class="btn btn-outline-primary ml-1">
+                                        Cite
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3 d-flex flex-column">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Expanded national database collection and data coverage in the FINDbase worldwide
+                                    database for clinically relevant genomic variation allele frequencies</h4>
+                            </div>
+                        </div>
+                        <div class="row flex-grow-1">
+                            <div class="col-12">
+                                <span class="float-left">
+                                    <span class="no-profile">Emmanouil Viennas</span>,
+                                    <a href="profile.html">George Patrinos</a>
+                                    <br />
+                                    Nucleic Acids Research, Volume 45, Issue D1, January 2017, Pages D846-D853
+                                </span>
+                                <span class="float-right mt-2">
+                                    <button class="btn btn-outline-primary">
+                                        Read
+                                    </button>
+                                    <button class="btn btn-outline-primary ml-1">
+                                        Cite
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 px-3 col-lg-2 text-right">
+                <p class="align-middle d-inline d-lg-none d-xl-inline">Sort by </p>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Alphabets
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Alphabets</button>
+                    <button class="dropdown-item" type="button">Impact Factor</button>
+                    <button class="dropdown-item" type="button">Date</button>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-auto pt-2 text-muted d-none d-md-block">
+            <div class="bottom-footer p-3">
+                <a href="new_article.html">
+                    Add new article
+                </a>
+                <a href="apply.html" class="float-right">
+                    Want to apply your institute for the program?
+                </a>
+                <a href="#" class="px-4 float-right">
+                    Help
+                </a>
+            </div>
+        </footer>
+        <div class="d-md-none mt-auto nav-spacing"></div>
+    </div>
+
+    <div class="navbar fixed-bottom nav-shadow d-block d-md-none p-0">
+        <div class="row h-100 text-center">
+            <div class="col-6 nav-tab nav-tab-left">
+                <a href="raf.html" class="vague-link">
+                    <span class="fas fa-list-ul nav-indicator"></span>
+                    <br />
+                    Overview
+                </a>
+            </div>
+            <div class="col-6 nav-tab nav-tab-right">
+                <a href="raf_search.html" class="vague-link">
+                    <span class="fas fa-search nav-indicator"></span>
+                    <br />
+                    Bibliography
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

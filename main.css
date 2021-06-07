@@ -1,0 +1,23 @@
+h1 {
+    font-size: 3em;
+}
+
+.title {
+    text-align: center;
+}
+
+.description {
+    font-size: 1.5em;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+
+    max-width: 100%;
+    object-fit: contain;
+
+    border: thin solid #ddd;
+    border-radius: 10%;
+    padding: 2%;
+}

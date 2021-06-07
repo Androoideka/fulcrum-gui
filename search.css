@@ -1,0 +1,9 @@
+.search-icon {
+    color: green;
+    font-size: 1.5em;
+    z-index: 9;
+}
+
+.search-icon:hover {
+    color: lime;
+}

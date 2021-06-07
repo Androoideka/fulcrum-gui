@@ -1,0 +1,7 @@
+.borderless-list > li {
+    border: 0;
+}
+
+ul > li {
+    font-size: 1.5em;
+}

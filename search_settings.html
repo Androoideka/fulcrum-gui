@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+
+    <!-- CSS for universal page contents -->
+    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <!-- Side menu related CSS -->
+    <link rel="stylesheet" type="text/css" href="side_menu.css" />
+
+    <title>Fulcrum</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row no-gutters pt-3">
+            <div class="col-6 pb-3 logo">
+                <a href="main.html" class="vague-link flashy-link logo-text">
+                    <span class="fas fa-flask align-middle logo"></span>
+                    <p class="d-inline">Fulcrum</p>
+                </a>
+            </div>
+            <div class="col-6 text-right">
+                <div class="dropdown d-none d-md-block">
+                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                        <p class="d-inline">Andrej V. Gašić</p>
+                        <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                    </a>
+                    <div class="dropdown-menu mt-3">
+                        <a href="account.html" class="dropdown-item">
+                            <span class="fas fa-user-alt"></span>
+                            Profile
+                        </a>
+                        <a href="raf.html" class="dropdown-item">
+                            <span class="fas fa-university"></span>
+                            RAF
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <span class="fas fa-comment-dots"></span>
+                            Send feedback
+                        </a>
+                        <a href="search_settings.html" class="dropdown-item">
+                            <span class="fas fa-cog"></span>
+                            Settings
+                        </a>
+                        <a href="main.html" class="dropdown-item">
+                            <span class="	fas fa-sign-out-alt"></span>
+                            Sign out
+                        </a>
+                    </div>
+                </div>
+                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                    <p class="d-inline">Andrej V. Gašić</p>
+                    <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 d-none d-md-block">
+                <ul class="d-none d-md-block nav flex-column navigation-font">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="search_settings.html">Search settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article_settings.html">Article settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="language_settings.html">Language settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-10">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Autocomplete</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="history" id="history">
+                            <label class="form-check-label" for="history">
+                                See suggestions based on your history as you type
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="popularity" id="popularity">
+                            <label class="form-check-label" for="popularity">
+                                See suggestions based on popularity as you type
+                            </label>
+                        </div>
+                        <h2 class="mt-4">Personalization</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="main" id="main">
+                            <label class="form-check-label" for="main">
+                                Allow personalized results when
+                                searching on the main page
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="institute" id="institute">
+                            <label class="form-check-label" for="institute">
+                                Allow personalized sorting when
+                                searching for articles on an institute page
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="profile" id="profile">
+                            <label class="form-check-label" for="profile">
+                                Allow personalized sorting when
+                                searching for articles on a profile page
+                            </label>
+                        </div>
+                        <h2 class="mt-4">Filter order</h2>
+                        <form>
+                            <div class="form-row text-center">
+                                <label class="col-4 col-md-2 col-xl-1 my-auto" for="date">Date</label>
+                                <select class="col-2 col-lg-1 my-auto custom-select" id="date">
+                                    <option selected>1</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label class="col-4 col-md-2 col-xl-1 my-auto" for="impact">Impact Factor</label>
+                                <select class="col-2 col-lg-1 my-auto custom-select" id="impact">
+                                    <option selected>3</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label class="col-4 col-md-2 col-xl-1 my-auto" for="journal">Journal</label>
+                                <select class="col-2 col-lg-1 my-auto custom-select" id="journal">
+                                    <option selected>6</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label class="col-4 col-md-2 col-xl-1 my-auto" for="institution">Institution</label>
+                                <select class="col-2 col-lg-1 my-auto custom-select" id="institution">
+                                    <option selected>5</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label class="col-4 col-md-2 col-xl-1 my-auto" for="keyword">Keyword</label>
+                                <select class="col-2 col-lg-1 my-auto custom-select" id="keyword">
+                                    <option selected>4</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label class="col-4 col-md-2 col-xl-1 my-auto" for="position">Author Position</label>
+                                <select class="col-2 col-lg-1 my-auto custom-select" id="position">
+                                    <option selected>8</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label class="col-4 col-md-2 col-xl-1 my-auto" for="involvement">Affiliation
+                                    Involvement</label>
+                                <select class="col-2 col-lg-1 my-auto custom-select" id="involvement">
+                                    <option selected>9</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label class="col-4 col-md-2 col-xl-1 my-auto" for="department">Department</label>
+                                <select class="col-2 col-lg-1 my-auto custom-select" id="department">
+                                    <option selected>7</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label class="col-4 col-md-2 col-xl-1 my-auto" for="category">Category</label>
+                                <select class="col-2 col-lg-1 my-auto custom-select" id="category">
+                                    <option selected>2</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-auto pt-2 text-muted d-none d-md-block">
+            <div class="bottom-footer p-3">
+                <a href="new_article.html">
+                    Add new article
+                </a>
+                <a href="apply.html" class="float-right">
+                    Want to apply your institute for the program?
+                </a>
+                <a href="#" class="px-4 float-right">
+                    Help
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

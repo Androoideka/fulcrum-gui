@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+
+    <!-- CSS for universal page contents -->
+    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <!-- Filter related CSS -->
+    <link rel="stylesheet" type="text/css" href="filters.css" />
+
+    <title>Fulcrum</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row no-gutters pt-3 flex-shrink-0">
+            <div class="col-6 pb-3 logo">
+                <a href="main.html" class="vague-link flashy-link logo-text">
+                    <span class="fas fa-flask align-middle logo"></span>
+                    <p class="d-inline">Fulcrum</p>
+                </a>
+            </div>
+            <div class="col-6 text-right">
+                <div class="dropdown d-none d-md-block">
+                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                        <p class="d-inline">Andrej V. Gašić</p>
+                        <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                    </a>
+                    <div class="dropdown-menu mt-3">
+                        <a href="account.html" class="dropdown-item">
+                            <span class="fas fa-user-alt"></span>
+                            Profile
+                        </a>
+                        <a href="raf.html" class="dropdown-item">
+                            <span class="fas fa-university"></span>
+                            RAF
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <span class="fas fa-comment-dots"></span>
+                            Send feedback
+                        </a>
+                        <a href="search_settings.html" class="dropdown-item">
+                            <span class="fas fa-cog"></span>
+                            Settings
+                        </a>
+                        <a href="main.html" class="dropdown-item">
+                            <span class="	fas fa-sign-out-alt"></span>
+                            Sign out
+                        </a>
+                    </div>
+                </div>
+                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                    <p class="d-inline">Andrej V. Gašić</p>
+                    <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row flex-shrink-0">
+            <div class="col-12 text-center">
+                <h1>Institutions</h1>
+            </div>
+        </div>
+        <div class="row pt-3 flex-shrink-0">
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-primary w-100">
+                    All
+                </button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-primary w-100">
+                    None
+                </button>
+            </div>
+        </div>
+        <div class="row pt-3 flex-shrink-0">
+            <div class="col-12">
+                <input type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="row pt-3 px-2 mb-2 check-list flex-fill">
+            <div class="col-8 my-auto">
+                <div class="big-checker-label w-100">RAF - 20 articles</div>
+            </div>
+            <div class="col-4 my-auto text-right">
+                <div class="form-check">
+                    <input class="form-check-input position-static big-checker" type="checkbox" id="inst1" value="inst1"
+                        aria-label="Računarski fakultet" />
+                </div>
+            </div>
+            <div class="col-8 my-auto my-auto">
+                <div class="big-checker w-100">IMGGE - 20 articles</div>
+            </div>
+            <div class="col-4 my-auto text-right">
+                <div class="form-check">
+                    <input class="form-check-input position-static big-checker" type="checkbox" id="inst2" value="inst2"
+                        aria-label="Institut za molekularnu genetiku i genetičko inženjerstvo" />
+                </div>
+            </div>
+            <div class="col-8 my-auto">
+                <div class="big-checker-label w-100">ETF - 20 articles</div>
+            </div>
+            <div class="col-4 my-auto text-right">
+                <div class="form-check">
+                    <input class="form-check-input position-static big-checker" type="checkbox" id="inst3" value="inst3"
+                        aria-label="Elektrotehnički fakultet" />
+                </div>
+            </div>
+            <div class="col-8 my-auto">
+                <div class="big-checker-label w-100">FON - 20 articles</div>
+            </div>
+            <div class="col-4 my-auto text-right">
+                <div class="form-check">
+                    <input class="form-check-input position-static big-checker" type="checkbox" id="inst4" value="inst4"
+                        aria-label="Fakultet organizacionih nauka" />
+                </div>
+            </div>
+            <div class="col-8 my-auto">
+                <div class="big-checker-label w-100">UCLA - 20 articles</div>
+            </div>
+            <div class="col-4 my-auto text-right">
+                <div class="form-check">
+                    <input class="form-check-input position-static big-checker" type="checkbox" id="inst5" value="inst5"
+                        aria-label="University of California, Los Angeles" />
+                </div>
+            </div>
+            <div class="col-8 my-auto">
+                <div class="big-checker-label w-100">Stanford - 20 articles</div>
+            </div>
+            <div class="col-4 my-auto text-right">
+                <div class="form-check">
+                    <input class="form-check-input position-static big-checker" type="checkbox" id="inst6" value="inst6"
+                        aria-label="Stanford University" />
+                </div>
+            </div>
+            <div class="col-8 my-auto">
+                <div class="big-checker-label w-100">MIT - 20 articles</div>
+            </div>
+            <div class="col-4 my-auto text-right">
+                <div class="form-check">
+                    <input class="form-check-input position-static big-checker" type="checkbox" id="inst7" value="inst7"
+                        aria-label="Massachusetts Institute of Technology" />
+                </div>
+            </div>
+            <div class="col-8 my-auto">
+                <div class="big-checker-label w-100">Stanford - 20 articles</div>
+            </div>
+            <div class="col-4 my-auto text-right">
+                <div class="form-check">
+                    <input class="form-check-input position-static big-checker" type="checkbox" id="inst8" value="inst8"
+                        aria-label="California Institute of Technology" />
+                </div>
+            </div>
+        </div>
+        <div class="row mt-auto mb-3 flex-shrink-0">
+            <div class="col-12 text-right">
+                <a href="date_filter.html" role="button" class="btn btn-primary">Next</a>
+            </div>
+        </div>
+        <footer class="mt-auto pt-2 text-muted d-none d-md-block flex-shrink-0">
+            <div class="bottom-footer p-3">
+                <a href="new_article.html">
+                    Add new article
+                </a>
+                <a href="apply.html" class="float-right">
+                    Want to apply your institute for the program?
+                </a>
+                <a href="#" class="px-4 float-right">
+                    Help
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

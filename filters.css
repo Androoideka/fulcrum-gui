@@ -1,0 +1,21 @@
+.check-list {
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.card-filter {
+    max-height: 15vh;
+}
+
+.free-filter {
+    max-height: 40vh;
+}
+
+.big-checker {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.big-checker-label {
+    font-size: 1em;
+}

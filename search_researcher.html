@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+
+    <!-- CSS for universal page contents -->
+    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <!-- Profile specific CSS -->
+    <link rel="stylesheet" type="text/css" href="profile.css" />
+    <!-- Search related CSS -->
+    <link rel="stylesheet" type="text/css" href="search.css" />
+    <!-- Filter related CSS -->
+    <link rel="stylesheet" type="text/css" href="filters.css" />
+    <!-- Result related CSS -->
+    <link rel="stylesheet" type="text/css" href="results.css" />
+
+    <title>Fulcrum</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row no-gutters pt-3">
+            <div class="col-6 col-lg-2 logo pb-3 order-first">
+                <a href="main.html" class="vague-link flashy-link logo-text">
+                    <span class="fas fa-flask align-middle logo"></span>
+                    <p class="d-inline">Fulcrum</p>
+                </a>
+            </div>
+            <div class="col-12 px-2 pb-2 col-lg-7">
+                <div class="input-group">
+                    <input class="form-control rounded-pill border-right-0" type="search" placeholder="Search.." />
+                    <span class="input-group-append">
+                        <span class="input-group-text bg-transparent border-0 ml-n5">
+                            <a href="search_article.html" class="vague-link fas fa-search search-icon"></a>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Researchers
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="search_article.html">Articles</a>
+                        <a class="dropdown-item" href="search_researcher.html">Researchers</a>
+                        <a class="dropdown-item" href="search_institution.html">Institutions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 order-first order-lg-0 text-right">
+                <div class="dropdown d-none d-md-block">
+                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                        <p class="d-inline d-lg-none d-xl-inline">Andrej V. Gašić</p>
+                        <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                    </a>
+                    <div class="dropdown-menu mt-3">
+                        <a href="account.html" class="dropdown-item">
+                            <span class="fas fa-user-alt"></span>
+                            Profile
+                        </a>
+                        <a href="raf.html" class="dropdown-item">
+                            <span class="fas fa-university"></span>
+                            RAF
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <span class="fas fa-comment-dots"></span>
+                            Send feedback
+                        </a>
+                        <a href="search_settings.html" class="dropdown-item">
+                            <span class="fas fa-cog"></span>
+                            Settings
+                        </a>
+                        <a href="main.html" class="dropdown-item">
+                            <span class="	fas fa-sign-out-alt"></span>
+                            Sign out
+                        </a>
+                    </div>
+                </div>
+                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                    <p class="d-inline">Andrej V. Gašić</p>
+                    <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                </a>
+            </div>
+            <div class="col-12 col-lg-2 px-3 px-lg-0">
+                <ul class="list-group check-list free-filter">
+                    <li class="list-group-item">
+                        <label>
+                            <input type="checkbox" />
+                            RAF (6 authors)
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                        <label>
+                            <input type="checkbox" />
+                            IMGGE (4 authors)
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                        <label>
+                            <input type="checkbox" />
+                            TU Wien (9 authors)
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                        <label>
+                            <input type="checkbox" />
+                            Stanford (19 authors)
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                        <label>
+                            <input type="checkbox" />
+                            MIT (13 authors)
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 px-3 d-lg-none">
+                <hr class="d-lg-none" />
+            </div>
+            <div class="col-6 px-3 d-lg-none my-auto">
+                1350 results.
+            </div>
+            <div class="col-12 px-3 d-lg-none order-4">
+                <hr class="d-lg-none" />
+            </div>
+            <div class="col-12 col-lg-8 pl-3 order-last order-lg-0">
+                <div class="row">
+                    <div class="col-12 col-lg-6 my-auto">
+                        <span class="fas fa-user-graduate mini-dp align-middle"></span>
+                        <div class="d-inline-block align-middle">
+                            <a href="profile.html" class="vague-link">Stevan A. Milinković</a>
+                            <br />
+                            <a href="raf.html" class="vague-link">Računarski fakultet</a>
+                        </div>
+                    </div>
+                    <div class="col-4 offset-2 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-12">
+                                Email: <a href="mailto:agasic218rn@raf.rs">agasic218rn@raf.rs</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                Phone: +381628931552
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <span class="fab fa-google social-icon"></span>
+                            </div>
+                            <div class="col-4">
+                                <span class="fab fa-linkedin social-icon"></span>
+                            </div>
+                            <div class="col-4">
+                                <span class="fab fa-github social-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 my-auto">
+                        <span class="fas fa-user-graduate mini-dp align-middle"></span>
+                        <div class="d-inline-block align-middle">
+                            <a href="profile.html" class="vague-link">Andrej V. Gaišić</a>
+                            <br />
+                            <a href="raf.html" class="vague-link">Računarski fakultet</a>
+                        </div>
+                    </div>
+                    <div class="col-4 offset-2 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-12">
+                                Email: <a href="mailto:agasic218rn@raf.rs">agasic218rn@raf.rs</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                Phone: +381628931552
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <span class="fab fa-google social-icon"></span>
+                            </div>
+                            <div class="col-4">
+                                <span class="fab fa-linkedin social-icon"></span>
+                            </div>
+                            <div class="col-4">
+                                <span class="fab fa-github social-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr />
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 px-3 col-lg-2 text-right">
+                <p class="align-middle d-inline d-lg-none d-xl-inline">Sort by </p>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Alphabets
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Alphabets</button>
+                    <button class="dropdown-item" type="button">Affiliation</button>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-auto pt-2 text-muted d-none d-md-block">
+            <div class="bottom-footer p-3">
+                <a href="new_article.html">
+                    Add new article
+                </a>
+                <a href="apply.html" class="float-right">
+                    Want to apply your institute for the program?
+                </a>
+                <a href="#" class="px-4 float-right">
+                    Help
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

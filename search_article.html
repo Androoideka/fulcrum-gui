@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+
+    <!-- CSS for universal page contents -->
+    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <!-- Search related CSS -->
+    <link rel="stylesheet" type="text/css" href="search.css" />
+    <!-- Filter related CSS -->
+    <link rel="stylesheet" type="text/css" href="filters.css" />
+    <!-- Result related CSS -->
+    <link rel="stylesheet" type="text/css" href="results.css" />
+
+    <title>Fulcrum</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row no-gutters pt-3">
+            <div class="col-6 col-lg-2 logo pb-3 order-first">
+                <a href="main.html" class="vague-link flashy-link logo-text">
+                    <span class="fas fa-flask align-middle logo"></span>
+                    <p class="d-inline">Fulcrum</p>
+                </a>
+            </div>
+            <div class="col-12 px-2 pb-2 col-lg-7">
+                <div class="input-group">
+                    <input class="form-control rounded-pill border-right-0" type="search" placeholder="Search.." />
+                    <span class="input-group-append">
+                        <span class="input-group-text bg-transparent border-0 ml-n5">
+                            <a href="search_article.html" class="vague-link fas fa-search search-icon"></a>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Articles
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="search_article.html">Articles</a>
+                        <a class="dropdown-item" href="search_researcher.html">Researchers</a>
+                        <a class="dropdown-item" href="search_institution.html">Institutions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 order-first order-lg-0 text-right">
+                <div class="dropdown d-none d-md-block">
+                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                        <p class="d-inline d-lg-none d-xl-inline">Andrej V. Gašić</p>
+                        <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                    </a>
+                    <div class="dropdown-menu mt-3">
+                        <a href="account.html" class="dropdown-item">
+                            <span class="fas fa-user-alt"></span>
+                            Profile
+                        </a>
+                        <a href="raf.html" class="dropdown-item">
+                            <span class="fas fa-university"></span>
+                            RAF
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <span class="fas fa-comment-dots"></span>
+                            Send feedback
+                        </a>
+                        <a href="search_settings.html" class="dropdown-item">
+                            <span class="fas fa-cog"></span>
+                            Settings
+                        </a>
+                        <a href="main.html" class="dropdown-item">
+                            <span class="	fas fa-sign-out-alt"></span>
+                            Sign out
+                        </a>
+                    </div>
+                </div>
+                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                    <p class="d-inline">Andrej V. Gašić</p>
+                    <span class="fas fa-user-graduate align-middle user pl-2"></span>
+                </a>
+            </div>
+            <div class="col-6 d-lg-none px-3 my-auto">
+                <a href="institution_filter.html" class="vague-link">
+                    <span class="fas fa-filter"></span>
+                    Filters
+                </a>
+            </div>
+            <div class="col-6 d-lg-none px-3 text-right">
+                <button class="btn btn-primary">Clear</button>
+            </div>
+            <div class="col-12 px-3 d-lg-none">
+                <hr class="d-lg-none" />
+            </div>
+            <div class="col-6 px-3 d-lg-none my-auto">
+                1350 results.
+            </div>
+            <div class="col-12 px-3 d-lg-none order-4">
+                <hr class="d-lg-none" />
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#date-filter">
+                        Date Range
+                    </div>
+                    <div class="collapse" id="date-filter">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="start-date">From</label>
+                                <input type="date" class="form-control" id="start-date" name="start-date" />
+                            </div>
+                            <div class="form-group">
+                                <label for="end-date">To</label>
+                                <input type="date" class="form-control" id="end-date" name="end-date" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#category-filter">
+                        Categories
+                    </div>
+                    <div class="collapse" id="category-filter">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="m21a" />
+                                <label class="form-check-label" for="m21a">
+                                    M21a (34 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="m21" />
+                                <label class="form-check-label" for="m21">
+                                    M21 (21 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="m22" />
+                                <label class="form-check-label" for="m22">
+                                    M22 (22 articles)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="m23" />
+                                <label class="form-check-label" for="m23">
+                                    M23 (80 articles)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#impact-filter">
+                        Impact Factor Range
+                    </div>
+                    <div class="collapse" id="impact-filter">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="start-date">From</label>
+                                <input type="number" class="form-control" id="lowest-impact" name="lowest-impact"
+                                    step="0.001" min="0" />
+                            </div>
+                            <div class="form-group">
+                                <label for="start-date">To</label>
+                                <input type="number" class="form-control" id="highest-impact" name="highest-impact"
+                                    step="0.001" min="0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#keyword-filter">
+                        Keywords
+                    </div>
+                    <div class="collapse" id="keyword-filter">
+                        <div class="card-body">
+                            <span>computer science</span>
+                            <span><sub>machine learning</sub></span>
+                            <span>frontend</span>
+                            <span>ui design</span>
+                            <span><sup>deep learning</sup></span>
+                            <span>functional programming</span>
+                            <span><sub>haskell</sub></span>
+                            <span>typography</span>
+                            <span>lambda calculus</span>
+                            <span>clustering</span>
+                            <hr />
+                            <div class="form-group">
+                                <label for="custom-keywords">Custom keywords (separated by commas)</label>
+                                <input type="text" class="form-control" id="custom-keywords" name="custom-keywords" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#institution-filter">
+                        Institutions
+                    </div>
+                    <div class="collapse" id="institution-filter">
+                        <div class="card-body">
+                            <input type="text" class="form-control" id="search-institutions"
+                                name="search-institutions" />
+                            <ul class="list-group check-list card-filter">
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        RAF (20 articles)
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        IMGGE (20 articles)
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        TU Wien (20 articles)
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Stanford (20 articles)
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#journal-filter">
+                        Journals
+                    </div>
+                    <div class="collapse" id="journal-filter">
+                        <div class="card-body">
+                            <input type="text" class="form-control" id="search-journals" name="search-journals" />
+                            <ul class="list-group check-list card-filter">
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Nature (20 articles)
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Science (20 articles)
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Journal of Statistical Software (20 articles)
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label>
+                                        <input type="checkbox" />
+                                        IEEE (20 articles)
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 pl-3 order-last order-lg-0">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3 d-flex flex-column">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Software JPEG decoder for embedded systems</h4>
+                            </div>
+                        </div>
+                        <div class="row flex-grow-1">
+                            <div class="col-12 mt-auto">
+                                <span class="float-left">
+                                    <a href="profile.html">Andrej V. Gasic</a>,
+                                    <a href="profile.html">Stevan A. Milinkovic</a>
+                                    <br />
+                                    2012 20th Telecommunications Forum
+                                </span>
+                                <span class="float-right mt-2">
+                                    <button class="btn btn-outline-primary">
+                                        Read
+                                    </button>
+                                    <button class="btn btn-outline-primary ml-1">
+                                        Cite
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3 d-flex flex-column">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Prognostic significance of SOX2, SOX3, SOX11, SOX14 and SOX 18 gene expression in
+                                    adult de novo acute myeloid leukemia</h4>
+                            </div>
+                        </div>
+                        <div class="row flex-grow-1">
+                            <div class="col-12">
+                                <span class="float-left">
+                                    <span class="no-profile">Bojana Dimić Surla</span>
+                                    <br />
+                                    Leukemia research, 2018 - Elsevier
+                                </span>
+                                <span class="float-right mt-2">
+                                    <button class="btn btn-outline-primary">
+                                        Read
+                                    </button>
+                                    <button class="btn btn-outline-primary ml-1">
+                                        Cite
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3 d-flex flex-column">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Expanded national database collection and data coverage in the FINDbase worldwide
+                                    database for clinically relevant genomic variation allele frequencies</h4>
+                            </div>
+                        </div>
+                        <div class="row flex-grow-1">
+                            <div class="col-12">
+                                <span class="float-left">
+                                    <span class="no-profile">Emmanouil Viennas</span>,
+                                    <a href="profile.html">George Patrinos</a>
+                                    <br />
+                                    Nucleic Acids Research, Volume 45, Issue D1, January 2017, Pages D846-D853
+                                </span>
+                                <span class="float-right mt-2">
+                                    <button class="btn btn-outline-primary">
+                                        Read
+                                    </button>
+                                    <button class="btn btn-outline-primary ml-1">
+                                        Cite
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 px-3 col-lg-2 text-right">
+                <p class="align-middle d-inline d-lg-none d-xl-inline">Sort by </p>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Alphabets
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Alphabets</button>
+                    <button class="dropdown-item" type="button">Impact Factor</button>
+                    <button class="dropdown-item" type="button">Date</button>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-auto pt-2 text-muted d-none d-md-block">
+            <div class="bottom-footer p-3">
+                <a href="new_article.html">
+                    Add new article
+                </a>
+                <a href="apply.html" class="float-right">
+                    Want to apply your institute for the program?
+                </a>
+                <a href="#" class="px-4 float-right">
+                    Help
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

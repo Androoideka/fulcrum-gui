@@ -1,0 +1,26 @@
+.nav-indicator {
+    font-size: 1.25em;;
+}
+
+.nav-tab {
+    border-top: thin solid gray;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: lightgray;
+}
+
+.nav-tab-left {
+    border-left: thin solid gray;
+}
+
+.nav-tab-right {
+    border-right: thin solid gray;
+}
+
+.nav-shadow {
+    box-shadow: 0 -0.01em 0.5em #888888;
+}
+
+.nav-spacing {
+    padding-bottom: 5em;
+}
