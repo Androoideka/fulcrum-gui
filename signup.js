@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
 
 var desktopHTML = `
 <div class = "card-body" id = "card-content">
-    <form action = "main_signed_in.html">
+    <form action = "index_signed_in.html">
         <div class = "form-row">
             <div class = "form-group col-lg-6">
                 <label for="institutions">
@@ -120,7 +120,7 @@ var desktopHTML = `
 </div>
 `
 var mobileHTML1 = `
-<form action = "main_signed_in.html">
+<form action = "index_signed_in.html">
     <div class = "form-group">
         <label for="institutions">
             Institution:
@@ -159,7 +159,7 @@ var mobileHTML1 = `
 `
 
 var mobileHTML2 = `
-<form action = "main_signed_in.html">
+<form action = "index_signed_in.html">
     <div class = "form-row">
         <div class = "form-group col-lg-6">
             <label for="name">
