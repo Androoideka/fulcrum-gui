@@ -14,3 +14,8 @@
     border-radius: 10%;
     padding: 2%;
 }
+
+.institution-name {
+    top: 50%;
+    transform: translateY(-50%);
+}
