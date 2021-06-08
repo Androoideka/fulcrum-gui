@@ -3,12 +3,12 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
@@ -16,11 +16,11 @@
     <!-- My CSS -->
 
     <!-- CSS for universal page contents -->
-    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <link type="text/css" href="fulcrum.css" rel="stylesheet">
     <!-- Side menu related CSS -->
-    <link rel="stylesheet" type="text/css" href="side_menu.css" />
+    <link type="text/css" href="side_menu.css" rel="stylesheet">
     <!-- Notification related CSS -->
-    <link rel="stylesheet" type="text/css" href="notifications.css" />
+    <link type="text/css" href="notifications.css" rel="stylesheet">
 
     <title>Fulcrum</title>
 </head>
@@ -29,42 +29,42 @@
     <div class="container-fluid d-flex flex-column vh-100">
         <div class="row no-gutters pt-3">
             <div class="col-6 pb-3 logo">
-                <a href="index.html" class="vague-link flashy-link logo-text">
+                <a class="vague-link flashy-link logo-text" href="index.html">
                     <span class="fas fa-flask align-middle logo"></span>
                     <p class="d-inline">Fulcrum</p>
                 </a>
             </div>
             <div class="col-6 text-right">
                 <div class="dropdown d-none d-md-block">
-                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                    <a class="vague-link flashy-link" data-toggle="dropdown" href="#">
                         <p class="d-inline">Andrej V. Gašić</p>
                         <span class="fas fa-user-graduate align-middle user pl-2"></span>
                     </a>
                     <div class="dropdown-menu mt-3">
-                        <a href="account.html" class="dropdown-item">
+                        <a class="dropdown-item" href="user_account.html">
                             <span class="fas fa-user-alt"></span>
                             Profile
                         </a>
-                        <a href="raf.html" class="dropdown-item">
+                        <a class="dropdown-item" href="raf.html">
                             <span class="fas fa-university"></span>
                             RAF
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a class="dropdown-item" href="#">
                             <span class="fas fa-comment-dots"></span>
                             Send feedback
                         </a>
-                        <a href="search_settings.html" class="dropdown-item">
+                        <a class="dropdown-item" href="settings_search.html">
                             <span class="fas fa-cog"></span>
                             Settings
                         </a>
-                        <a href="index.html" class="dropdown-item">
+                        <a class="dropdown-item" href="index.html">
                             <span class="	fas fa-sign-out-alt"></span>
                             Sign out
                         </a>
                     </div>
                 </div>
-                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                <a class="vague-link flashy-link d-md-none" href="user_options.html">
                     <p class="d-inline">Andrej V. Gašić</p>
                     <span class="fas fa-user-graduate align-middle user pl-2"></span>
                 </a>
@@ -74,19 +74,19 @@
             <div class="col-2 d-none d-md-block">
                 <ul class="d-none d-md-block nav flex-column navigation-font">
                     <li class="nav-item">
-                        <a class="nav-link" href="account.html">Info</a>
+                        <a class="nav-link" href="user_account.html">Info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="security.html">Security</a>
+                        <a class="nav-link" href="user_security.html">Security</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="article_history.html">Article history</a>
+                        <a class="nav-link" href="user_article_history.html">Article history</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="affiliation_history.html">Affiliation history</a>
+                        <a class="nav-link" href="user_affiliation_history.html">Affiliation history</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="notifications.html">Notifications</a>
+                        <a class="nav-link active" href="user_notifications.html">Notifications</a>
                     </li>
                 </ul>
             </div>
@@ -94,9 +94,9 @@
                 <div class="row pt-2">
                     <div class="col-12 d-flex align-items-center">
                         <div>
-                            <span class="far fa-file-alt icons"></span>
+                            <span class="far fa-file-alt notif-icon"></span>
                         </div>
-                        <span class="pl-2 description">
+                        <span class="pl-2 notif-desc">
                             You've been added to the article <a href="article.html">"Software JPEG decoder for embedded
                                 systems"</a> as a first author.
                         </span>
@@ -110,15 +110,15 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <hr />
+                        <hr>
                     </div>
                 </div>
                 <div class="row pt-2">
                     <div class="col-12 d-flex align-items-center">
                         <div>
-                            <span class="far fa-file-alt icons"></span>
+                            <span class="far fa-file-alt notif-icon"></span>
                         </div>
-                        <span class="pl-2 description">
+                        <span class="pl-2 notif-desc">
                             You've been added to the article <a href="article.html">"Expanded national database
                                 collection and data coverage in
                                 the FINDbase worldwide database for clinically relevant genomic variation allele
@@ -135,15 +135,15 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <hr />
+                        <hr>
                     </div>
                 </div>
                 <div class="row pt-2">
                     <div class="col-12 d-flex align-items-center">
                         <div>
-                            <span class="far fa-comment-dots icons"></span>
+                            <span class="far fa-comment-dots notif-icon"></span>
                         </div>
-                        <span class="pl-2 description">
+                        <span class="pl-2 notif-desc">
                             Success! The address of the institution <a href="raf.html">Računarski fakultet</a> has been
                             corrected thanks to your
                             feedback.
@@ -158,7 +158,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <hr />
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -168,10 +168,10 @@
                 <a href="new_article.html">
                     Add new article
                 </a>
-                <a href="apply.html" class="float-right">
+                <a class="float-right" href="apply.html">
                     Want to apply your institute for the program?
                 </a>
-                <a href="#" class="px-4 float-right">
+                <a class="px-4 float-right" href="#">
                     Help
                 </a>
             </div>

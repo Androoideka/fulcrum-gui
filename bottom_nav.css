@@ -1,20 +1,12 @@
 .nav-indicator {
     font-size: 1.25em;;
+    color: green;
 }
 
 .nav-tab {
-    border-top: thin solid gray;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: lightgray;
-}
-
-.nav-tab-left {
-    border-left: thin solid gray;
-}
-
-.nav-tab-right {
-    border-right: thin solid gray;
+    background-color: white;
 }
 
 .nav-shadow {

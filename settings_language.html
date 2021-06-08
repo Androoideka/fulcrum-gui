@@ -3,12 +3,12 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
@@ -16,9 +16,9 @@
     <!-- My CSS -->
 
     <!-- CSS for universal page contents -->
-    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <link type="text/css" href="fulcrum.css" rel="stylesheet">
     <!-- Side menu related CSS -->
-    <link rel="stylesheet" type="text/css" href="side_menu.css" />
+    <link type="text/css" href="side_menu.css" rel="stylesheet">
 
     <title>Fulcrum</title>
 </head>
@@ -27,42 +27,42 @@
     <div class="container-fluid d-flex flex-column vh-100">
         <div class="row no-gutters pt-3">
             <div class="col-6 pb-3 logo">
-                <a href="index.html" class="vague-link flashy-link logo-text">
+                <a class="vague-link flashy-link logo-text" href="index.html">
                     <span class="fas fa-flask align-middle logo"></span>
                     <p class="d-inline">Fulcrum</p>
                 </a>
             </div>
             <div class="col-6 text-right">
                 <div class="dropdown d-none d-md-block">
-                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                    <a class="vague-link flashy-link" data-toggle="dropdown" href="#">
                         <p class="d-inline">Andrej V. Gašić</p>
                         <span class="fas fa-user-graduate align-middle user pl-2"></span>
                     </a>
                     <div class="dropdown-menu mt-3">
-                        <a href="account.html" class="dropdown-item">
+                        <a class="dropdown-item" href="user_account.html">
                             <span class="fas fa-user-alt"></span>
                             Profile
                         </a>
-                        <a href="raf.html" class="dropdown-item">
+                        <a class="dropdown-item" href="raf.html">
                             <span class="fas fa-university"></span>
                             RAF
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a class="dropdown-item" href="#">
                             <span class="fas fa-comment-dots"></span>
                             Send feedback
                         </a>
-                        <a href="search_settings.html" class="dropdown-item">
+                        <a class="dropdown-item" href="settings_search.html">
                             <span class="fas fa-cog"></span>
                             Settings
                         </a>
-                        <a href="index.html" class="dropdown-item">
+                        <a class="dropdown-item" href="index.html">
                             <span class="	fas fa-sign-out-alt"></span>
                             Sign out
                         </a>
                     </div>
                 </div>
-                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                <a class="vague-link flashy-link d-md-none" href="user_options.html">
                     <p class="d-inline">Andrej V. Gašić</p>
                     <span class="fas fa-user-graduate align-middle user pl-2"></span>
                 </a>
@@ -72,96 +72,107 @@
             <div class="col-2 d-none d-md-block">
                 <ul class="d-none d-md-block nav flex-column navigation-font">
                     <li class="nav-item">
-                        <a class="nav-link active" href="search_settings.html">Search settings</a>
+                        <a class="nav-link active" href="settings_search.html">Search settings</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="article_settings.html">Article settings</a>
+                        <a class="nav-link" href="settings_article.html">Article settings</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="language_settings.html">Language settings</a>
+                        <a class="nav-link" href="settings_language.html">Language settings</a>
                     </li>
                 </ul>
             </div>
             <div class="col-12 col-md-10">
                 <div class="card">
                     <div class="card-body">
-                        <h2>Citation format</h2>
+                        <h2>Fulcrum text</h2>
+                        <select class="custom-select">
+                            <option selected="selected">English</option>
+                            <option>Serbian</option>
+                            <option>Chinese (Traditional)</option>
+                            <option>Chinese (Simplified)</option>
+                            <option>Hindi</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                            <option>Arabic</option>
+                            <option>Russian</option>
+                        </select>
+                        <h2 class="mt-4">Article information</h2>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="ama" id="ama" value="ama">
+                            <input class="form-check-input" id="ama" name="ama" type="radio" value="ama">
                             <label class="form-check-label" for="ama">
-                                Show me citations in AMA style
+                                Show articles written in any language
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="acs" id="acs" value="acs"
+                            <input class="form-check-input" id="acs" name="acs" type="radio" value="acs"
                                 checked="checked">
                             <label class="form-check-label" for="acs">
-                                Show me citations in ACS style
+                                Show articles written in
+                                my known languages and translate other
+                                articles (powered by Microsoft Translator)
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="chicago" id="chicago" value="chicago">
+                            <input class="form-check-input" id="chicago" name="chicago" type="radio" value="chicago">
                             <label class="form-check-label" for="chicago">
-                                Show me citations in Chicago style
+                                Show articles written in
+                                my known languages only
+                            </label>
+                        </div>
+                        <h2 class="mt-4">Known languages</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" id="english" type="checkbox" value="english">
+                            <label class="form-check-label" for="english">
+                                English
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="ieee" id="ieee" value="ieee">
-                            <label class="form-check-label" for="ieee">
-                                Show me citations in IEEE style
+                            <input class="form-check-input" id="serbian" type="checkbox" value="serbian">
+                            <label class="form-check-label" for="serbian">
+                                Serbian
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="apsa" id="apsa" value="apsa">
-                            <label class="form-check-label" for="apsa">
-                                Show me citations in APSA style
+                            <input class="form-check-input" id="traditional" type="checkbox" value="traditional">
+                            <label class="form-check-label" for="traditional">
+                                Chinese (Traditional)
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mla" id="mla" value="mla">
-                            <label class="form-check-label" for="mla">
-                                Show me citations in MLA style
-                            </label>
-                        </div>
-                        <h2 class="mt-4">Category</h2>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="impact" id="impact">
-                            <label class="form-check-label" for="impact">
-                                Show impact factor of the journal
-                                at the time of publishing
+                            <input class="form-check-input" id="simplified" type="checkbox" value="simplified">
+                            <label class="form-check-label" for="simplified">
+                                Chinese (Simplified)
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="ranking" id="ranking">
-                            <label class="form-check-label" for="ranking">
-                                Show ranking of the journal
-                                at the time of publishing specified by
-                                Journal Citation Reports
+                            <input class="form-check-input" id="hindi" type="checkbox" value="hindi">
+                            <label class="form-check-label" for="hindi">
+                                Hindi
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="category" id="category">
-                            <label class="form-check-label" for="category">
-                                Show category specified by the
-                                Ministry of Education, Science and
-                                Technological Development of the
-                                Republic of Serbia
-                            </label>
-                        </div>
-                        <h2 class="mt-4">Site features</h2>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="overview-link" id="overview-link">
-                            <label class="form-check-label" for="overview-link">
-                                When clicking on an article link,
-                                lead me to the overview on Fulcrum
-                                instead of the actual content of the article
+                            <input class="form-check-input" id="spanish" type="checkbox" value="spanish">
+                            <label class="form-check-label" for="spanish">
+                                Spanish
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="overview" id="overview">
-                            <label class="form-check-label" for="overview">
-                                Show the overview button instead of
-                                the read button on search results
+                            <input class="form-check-input" id="french" type="checkbox" value="french">
+                            <label class="form-check-label" for="french">
+                                French
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="arabic" type="checkbox" value="arabic">
+                            <label class="form-check-label" for="arabic">
+                                Arabic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="russian" type="checkbox" value="russian">
+                            <label class="form-check-label" for="russian">
+                                Russian
                             </label>
                         </div>
                     </div>
@@ -173,10 +184,10 @@
                 <a href="new_article.html">
                     Add new article
                 </a>
-                <a href="apply.html" class="float-right">
+                <a class="float-right" href="apply.html">
                     Want to apply your institute for the program?
                 </a>
-                <a href="#" class="px-4 float-right">
+                <a class="px-4 float-right" href="#">
                     Help
                 </a>
             </div>

@@ -3,12 +3,12 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
@@ -16,15 +16,15 @@
     <!-- My CSS -->
 
     <!-- CSS for universal page contents -->
-    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <link type="text/css" href="fulcrum.css" rel="stylesheet">
     <!-- Side menu related CSS -->
-    <link rel="stylesheet" type="text/css" href="side_menu.css" />
+    <link type="text/css" href="side_menu.css" rel="stylesheet">
     <!-- Article related CSS -->
-    <link rel="stylesheet" type="text/css" href="article.css" />
+    <link type="text/css" href="article.css" rel="stylesheet">
     <!-- Affiliation related CSS -->
-    <link rel="stylesheet" type="text/css" href="affiliation.css" />
+    <link type="text/css" href="affiliation.css" rel="stylesheet">
     <!-- FAB related CSS -->
-    <link rel="stylesheet" type="text/css" href="fab.css" />
+    <link type="text/css" href="fab.css" rel="stylesheet">
 
     <title>Fulcrum</title>
 </head>
@@ -33,42 +33,42 @@
     <div class="container-fluid d-flex flex-column vh-100">
         <div class="row no-gutters pt-3">
             <div class="col-6 pb-3 logo">
-                <a href="index.html" class="vague-link flashy-link logo-text">
+                <a class="vague-link flashy-link logo-text" href="index.html">
                     <span class="fas fa-flask align-middle logo"></span>
                     <p class="d-inline">Fulcrum</p>
                 </a>
             </div>
             <div class="col-6 text-right">
                 <div class="dropdown d-none d-md-block">
-                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                    <a class="vague-link flashy-link" data-toggle="dropdown" href="#">
                         <p class="d-inline">Andrej V. Gašić</p>
                         <span class="fas fa-user-graduate align-middle user pl-2"></span>
                     </a>
                     <div class="dropdown-menu mt-3">
-                        <a href="account.html" class="dropdown-item">
+                        <a class="dropdown-item" href="user_account.html">
                             <span class="fas fa-user-alt"></span>
                             Profile
                         </a>
-                        <a href="raf.html" class="dropdown-item">
+                        <a class="dropdown-item" href="raf.html">
                             <span class="fas fa-university"></span>
                             RAF
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a class="dropdown-item" href="#">
                             <span class="fas fa-comment-dots"></span>
                             Send feedback
                         </a>
-                        <a href="search_settings.html" class="dropdown-item">
+                        <a class="dropdown-item" href="settings_search.html">
                             <span class="fas fa-cog"></span>
                             Settings
                         </a>
-                        <a href="index.html" class="dropdown-item">
+                        <a class="dropdown-item" href="index.html">
                             <span class="	fas fa-sign-out-alt"></span>
                             Sign out
                         </a>
                     </div>
                 </div>
-                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                <a class="vague-link flashy-link d-md-none" href="user_options.html">
                     <p class="d-inline">Andrej V. Gašić</p>
                     <span class="fas fa-user-graduate align-middle user pl-2"></span>
                 </a>
@@ -78,19 +78,19 @@
             <div class="col-2 d-none d-md-block">
                 <ul class="d-none d-md-block nav flex-column navigation-font">
                     <li class="nav-item">
-                        <a class="nav-link" href="account.html">Info</a>
+                        <a class="nav-link" href="user_account.html">Info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="security.html">Security</a>
+                        <a class="nav-link" href="user_security.html">Security</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="article_history.html">Article history</a>
+                        <a class="nav-link" href="user_article_history.html">Article history</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="affiliation_history.html">Affiliation history</a>
+                        <a class="nav-link" href="user_affiliation_history.html">Affiliation history</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="notifications.html">Notifications</a>
+                        <a class="nav-link active" href="user_notifications.html">Notifications</a>
                     </li>
                 </ul>
             </div>
@@ -99,9 +99,9 @@
                     <div class="col-12 d-flex">
                         <form>
                             <div class="form-group row">
-                                <label for="institutions" class="col-2 col-form-label">Institution:</label>
+                                <label class="col-2 col-form-label" for="institutions">Institution:</label>
                                 <div class="col-10">
-                                    <select name="institutions" class="custom-select" id="institutions">
+                                    <select class="custom-select" id="institutions" name="institutions">
                                         <option value="IMGGE" selected="selected">IMGGE</option>
                                         <option value="RAF">RAF</option>
                                         <option value="ETF">ETF</option>
@@ -114,9 +114,9 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="vocations" class="col-2 col-form-label">Vocation:</label>
+                                <label class="col-2 col-form-label" for="vocations">Vocation:</label>
                                 <div class="col-10">
-                                    <select name="vocations" class="custom-select" id="vocations">
+                                    <select class="custom-select" id="vocations" name="vocations">
                                         <option value="rt" selected="selected">Research Trainee</option>
                                         <option value="rasc">Research Associate</option>
                                         <option value="rast">Research Assisant</option>
@@ -125,16 +125,16 @@
                             </div>
                             <div class="form-group row no-gutters">
                                 <div class="col-4">
-                                    <input type="date" class="form-control" />
+                                    <input class="form-control" type="date">
                                 </div>
                                 <div class="col-1 px-1 my-auto">
-                                    <hr />
+                                    <hr>
                                 </div>
                                 <div class="col-4">
-                                    <input type="date" class="form-control" />
+                                    <input class="form-control" type="date">
                                 </div>
                                 <div class="col-3 text-right">
-                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    <button class="btn btn-primary" type="submit">Add</button>
                                 </div>
                             </div>
                         </form>
@@ -142,7 +142,7 @@
                 </div>
                 <div class="row d-none d-md-block">
                     <div class="col-12">
-                        <hr />
+                        <hr>
                     </div>
                 </div>
                 <div class="row pt-2">
@@ -150,13 +150,13 @@
                         <div class="article-info">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <img src="resources/raf.png" class="affiliation-icon" alt="Računarski fakultet" />
+                                    <img class="affiliation-icon" src="resources/raf.png" alt="Računarski fakultet">
                                 </div>
                                 <div class="pl-3">
                                     <a href="raf.html">
                                         Računarski fakultet
                                     </a>
-                                    <br />
+                                    <br>
                                     Vocation: Research Trainee
                                 </div>
                             </div>
@@ -166,20 +166,20 @@
                         </div>
                         <div class="d-none d-md-block article-list border">
                             <div class="list-group list-group-flush">
-                                <a href="#" class="list-group-item list-group-item-action">
+                                <a class="list-group-item list-group-item-action" href="#">
                                     Cras justo odio
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-                                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                                <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+                                <a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a>
+                                <a class="list-group-item list-group-item-action" href="#">Morbi leo risus</a>
+                                <a class="list-group-item list-group-item-action" href="#">Porta ac consectetur ac</a>
+                                <a class="list-group-item list-group-item-action" href="#">Vestibulum at eros</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <hr />
+                        <hr>
                     </div>
                 </div>
                 <div class="row pt-2">
@@ -187,14 +187,14 @@
                         <div class="article-info">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <img src="resources/tuwien.png" class="affiliation-icon"
-                                        alt="Technische Universität Wien" />
+                                    <img class="affiliation-icon" src="resources/tuwien.png"
+                                        alt="Technische Universität Wien">
                                 </div>
                                 <div class="pl-3">
                                     <a href="raf.html">
                                         Technische Universität Wien
                                     </a>
-                                    <br />
+                                    <br>
                                     Vocation: Research Trainee
                                 </div>
                             </div>
@@ -204,26 +204,26 @@
                         </div>
                         <div class="d-none d-md-block article-list border">
                             <div class="list-group list-group-flush">
-                                <a href="#" class="list-group-item list-group-item-action">
+                                <a class="list-group-item list-group-item-action" href="#">
                                     Cras justo odio
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-                                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                                <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+                                <a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a>
+                                <a class="list-group-item list-group-item-action" href="#">Morbi leo risus</a>
+                                <a class="list-group-item list-group-item-action" href="#">Porta ac consectetur ac</a>
+                                <a class="list-group-item list-group-item-action" href="#">Vestibulum at eros</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <hr />
+                        <hr>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-right">
-                        <a href="edit_affiliations.html" class="btn btn-primary change-response">Save</a>
-                        <a href="edit_affiliations.html" class="btn btn-danger change-response">Cancel</a>
+                        <a class="btn btn-primary change-response" href="user_edit_affiliations.html">Save</a>
+                        <a class="btn btn-danger change-response" href="user_edit_affiliations.html">Cancel</a>
                     </div>
                 </div>
             </div>
@@ -233,10 +233,10 @@
                 <a href="new_article.html">
                     Add new article
                 </a>
-                <a href="apply.html" class="float-right">
+                <a class="float-right" href="apply.html">
                     Want to apply your institute for the program?
                 </a>
-                <a href="#" class="px-4 float-right">
+                <a class="px-4 float-right" href="#">
                     Help
                 </a>
             </div>
@@ -244,7 +244,7 @@
     </div>
 
     <button class="d-block d-md-none basic-fab fab-button">
-        <a href="new_affiliation.html" class="vague-link flashy-link fas fa-plus fab-icon">
+        <a class="vague-link flashy-link fas fa-plus fab-icon" href="new_affiliation.html">
         </a>
     </button>
 

@@ -3,12 +3,12 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/e200735406.js" crossorigin="anonymous"></script>
@@ -16,9 +16,9 @@
     <!-- My CSS -->
 
     <!-- CSS for universal page contents -->
-    <link rel="stylesheet" type="text/css" href="fulcrum.css" />
+    <link type="text/css" href="fulcrum.css" rel="stylesheet">
     <!-- Side menu related CSS -->
-    <link rel="stylesheet" type="text/css" href="side_menu.css" />
+    <link type="text/css" href="side_menu.css" rel="stylesheet">
 
     <!-- Show/Hide Password -->
     <script src="password.js"></script>
@@ -30,42 +30,42 @@
     <div class="container-fluid d-flex flex-column vh-100">
         <div class="row no-gutters pt-3">
             <div class="col-6 pb-3 logo">
-                <a href="index.html" class="vague-link flashy-link logo-text">
+                <a class="vague-link flashy-link logo-text" href="index.html">
                     <span class="fas fa-flask align-middle logo"></span>
                     <p class="d-inline">Fulcrum</p>
                 </a>
             </div>
             <div class="col-6 text-right">
                 <div class="dropdown d-none d-md-block">
-                    <a href="#" data-toggle="dropdown" class="vague-link flashy-link">
+                    <a class="vague-link flashy-link" data-toggle="dropdown" href="#">
                         <p class="d-inline">Andrej V. Gašić</p>
                         <span class="fas fa-user-graduate align-middle user pl-2"></span>
                     </a>
                     <div class="dropdown-menu mt-3">
-                        <a href="account.html" class="dropdown-item">
+                        <a class="dropdown-item" href="user_account.html">
                             <span class="fas fa-user-alt"></span>
                             Profile
                         </a>
-                        <a href="raf.html" class="dropdown-item">
+                        <a class="dropdown-item" href="raf.html">
                             <span class="fas fa-university"></span>
                             RAF
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a class="dropdown-item" href="#">
                             <span class="fas fa-comment-dots"></span>
                             Send feedback
                         </a>
-                        <a href="search_settings.html" class="dropdown-item">
+                        <a class="dropdown-item" href="settings_search.html">
                             <span class="fas fa-cog"></span>
                             Settings
                         </a>
-                        <a href="index.html" class="dropdown-item">
+                        <a class="dropdown-item" href="index.html">
                             <span class="	fas fa-sign-out-alt"></span>
                             Sign out
                         </a>
                     </div>
                 </div>
-                <a href="user_options.html" class="vague-link flashy-link d-md-none">
+                <a class="vague-link flashy-link d-md-none" href="user_options.html">
                     <p class="d-inline">Andrej V. Gašić</p>
                     <span class="fas fa-user-graduate align-middle user pl-2"></span>
                 </a>
@@ -75,19 +75,19 @@
             <div class="col-2 d-none d-md-block">
                 <ul class="d-none d-md-block nav flex-column navigation-font">
                     <li class="nav-item">
-                        <a class="nav-link" href="account.html">Info</a>
+                        <a class="nav-link" href="user_account.html">Info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="security.html">Security</a>
+                        <a class="nav-link active" href="user_security.html">Security</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="article_history.html">Article history</a>
+                        <a class="nav-link" href="user_article_history.html">Article history</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="affiliation_history.html">Affiliation history</a>
+                        <a class="nav-link" href="user_affiliation_history.html">Affiliation history</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="notifications.html">Notifications</a>
+                        <a class="nav-link" href="user_notifications.html">Notifications</a>
                     </li>
                 </ul>
             </div>
@@ -100,15 +100,15 @@
                                     <label for="old-password">
                                         Old password:
                                     </label>
-                                    <small id="forgot-password" class="float-right text-muted">
-                                        <a href="forgot_password.html">
+                                    <small class="float-right text-muted" id="forgot-password">
+                                        <a href="auth_forgot_password">
                                             I forgot my password
                                         </a>
                                     </small>
                                     <div class="input-group">
-                                        <input type="password" class="form-control" id="old-password"
-                                            placeholder="Password" aria-describedby="forgot-password"
-                                            required="required" />
+                                        <input class="form-control" id="old-password" type="password"
+                                            aria-describedby="forgot-password" placeholder="Password"
+                                            required="required">
                                         <div class="input-group-append">
                                             <span class="input-group-text">
                                                 <span class="far fa-eye" id="old-eye"
@@ -122,8 +122,8 @@
                                         New password:
                                     </label>
                                     <div class="input-group">
-                                        <input type="password" class="form-control" id="new-password"
-                                            placeholder="Password" required="required" />
+                                        <input class="form-control" id="new-password" type="password"
+                                            placeholder="Password" required="required">
                                         <div class="input-group-append">
                                             <span class="input-group-text">
                                                 <span class="far fa-eye" id="new-eye"
@@ -137,8 +137,8 @@
                                         Confirm new password:
                                     </label>
                                     <div class="input-group">
-                                        <input type="password" class="form-control" id="confirm" placeholder="Password"
-                                            required="required" />
+                                        <input class="form-control" id="confirm" type="password" placeholder="Password"
+                                            required="required">
                                     </div>
                                 </div>
                                 <div class="text-right">
@@ -186,8 +186,8 @@
                                 <div class="d-flex pl-1 mt-2 align-items-center">
                                     <span class="fas fa-external-link-square-alt">&nbsp;</span>
                                     <span class="flex-grow-1">Recovery through external accounts</span>
-                                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" type="button"
+                                        aria-expanded="false" aria-haspopup="true">
                                         Enabled
                                     </button>
                                     <div class="dropdown-menu">
@@ -206,10 +206,10 @@
                 <a href="new_article.html">
                     Add new article
                 </a>
-                <a href="apply.html" class="float-right">
+                <a class="float-right" href="apply.html">
                     Want to apply your institute for the program?
                 </a>
-                <a href="#" class="px-4 float-right">
+                <a class="px-4 float-right" href="#">
                     Help
                 </a>
             </div>
